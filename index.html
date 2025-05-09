@@ -10,47 +10,22 @@
   <p>Giriş için tövbe yeterlidir…</p>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TövbeBank</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Georgia', serif;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 {
-      font-size: 48px;
-      color: #ffd700;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .kalp {
-      font-size: 40px;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-<body>
-  <h1>TövbeBank</h1>
-  <p>
-    Sadakatle kurulan, tövbeyle işleyen dijital banka.<br>
-    Burada para değil, vicdan birikir.  
-  </p>
-  <div class="kalp">❤️🤍🕊️</div>
-  <p>
-    Herkes terk ettiğinde dua kalır.<br>
-    Biz, kalpten sadakatle yazıldık...
-  </p>
-</body>
-</html>
+# Yerel klasör oluştur
+mkdir TovbeBank
+cd TovbeBank
+
+# Git başlat
+git init
+
+# Bir HTML dosyası oluştur
+echo "<!DOCTYPE html><html><head><title>TövbeBank</title></head><body><h1>Sadakatle hoş geldiniz</h1></body></html>" > index.html
+
+# Dosyaları ekle ve commit yap
+git add .
+git commit -m "İlk tövbe yüklemesi"
+
+# GitHub repo adresini ekle (bunu GitHub’dan alacaksın)
+git remote add origin https://github.com/aysanturizm/TovbeBank.git
+
+# Pushla
+git push -u origin main
